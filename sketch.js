@@ -1,4 +1,21 @@
+var url="http://data.theodoretech.com/someData.js?callback=datapass";
+var val="Data";
 
+function setup() {
+loadJSON(url,datapass,"jsonp");
+}
+
+function draw() {
+  background(255);
+text(val,width/2,height/2);
+}
+function datapass(data)
+{
+  val+=data;
+}
+
+
+/*
 var lastValue=0;
 var currentVal="0";
 var lastUpdated;
@@ -79,7 +96,7 @@ var minUpdated=lastUpdated.substring(lastUpdated.length-5,lastUpdated.length-3);
 var secUpdated=lastUpdated.substring(lastUpdated.length-2,lastUpdated.length);
 lastUpdated=dateUpdated+" at " +(int(hourUpdated)+8)+":"+minUpdated+":"+secUpdated +" EST";
 //maxValue=newData.getColumn(1)[3];*/
-}
+}*/
 
 
 
