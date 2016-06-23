@@ -2,7 +2,7 @@ var url="http://data.theodoretech.com";
 var val="Data";
 
 function setup() {
-loadJSON(url,datapass,"jsonp");
+loadStrings(url,datapass);
 }
 
 function draw() {
