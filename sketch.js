@@ -1,4 +1,4 @@
-var url="http://data.theodoretech.com/someData.js?callback=datapass";
+var url="http://data.theodoretech.com";
 var val="Data";
 
 function setup() {
