@@ -11,7 +11,7 @@ text(val,width/2,height/2);
 }
 function datapass(data)
 {
-  val+=data;
+  val+=data[0];
 }
 
 
